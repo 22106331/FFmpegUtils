@@ -12,10 +12,11 @@ libavfilter/af_afftfilt.o: libavfilter/af_afftfilt.c \
  libavutil/buffer.h libavutil/dict.h libavutil/frame.h libavutil/buffer.h \
  libavutil/log.h libavutil/samplefmt.h libavutil/pixfmt.h \
  libavutil/rational.h libavfilter/version.h libavutil/version.h \
- libavfilter/avfiltergraph.h libavfilter/formats.h \
- libavfilter/framepool.h libavfilter/framequeue.h libavfilter/thread.h \
- libavfilter/version.h libavfilter/video.h libavcodec/avcodec.h \
- libavutil/cpu.h libavutil/channel_layout.h libavcodec/version.h \
- libavutil/common.h libavutil/opt.h libavcodec/avfft.h libavutil/eval.h \
- libavfilter/audio.h libavfilter/avfilter.h libavfilter/internal.h \
- libavfilter/window_func.h
+ libavfilter/formats.h libavfilter/framepool.h libavfilter/framequeue.h \
+ libavfilter/thread.h libavfilter/version.h libavfilter/video.h \
+ libavcodec/avcodec.h libavutil/cpu.h libavutil/channel_layout.h \
+ libavcodec/version.h libavcodec/internal.h libavutil/mathematics.h \
+ libavcodec/avcodec.h libavutil/common.h libavutil/opt.h \
+ libavcodec/avfft.h libavutil/eval.h libavfilter/audio.h \
+ libavfilter/avfilter.h libavfilter/internal.h libavfilter/window_func.h \
+ libavutil/avassert.h

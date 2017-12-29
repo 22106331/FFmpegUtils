@@ -15,8 +15,8 @@ libavfilter/avfilter.o: libavfilter/avfilter.c libavutil/atomic.h \
  libavfilter/framequeue.h libavutil/frame.h libavfilter/audio.h \
  libavfilter/avfilter.h libavutil/avutil.h libavutil/dict.h \
  libavutil/log.h libavutil/pixfmt.h libavfilter/version.h \
- libavutil/version.h libavfilter/internal.h libavfilter/avfiltergraph.h \
- libavfilter/formats.h libavfilter/framepool.h libavfilter/thread.h \
- libavfilter/version.h libavfilter/video.h libavcodec/avcodec.h \
- libavutil/cpu.h libavcodec/version.h libavfilter/filters.h \
- libavutil/ffversion.h
+ libavutil/version.h libavfilter/internal.h libavfilter/formats.h \
+ libavfilter/framepool.h libavfilter/thread.h libavfilter/version.h \
+ libavfilter/video.h libavcodec/avcodec.h libavutil/cpu.h \
+ libavcodec/version.h libavcodec/internal.h libavutil/mathematics.h \
+ libavcodec/avcodec.h libavfilter/filters.h libavutil/ffversion.h

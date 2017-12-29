@@ -16,6 +16,6 @@ libavfilter/af_ashowinfo.o: libavfilter/af_ashowinfo.c \
  libavutil/pixfmt.h libavutil/rational.h libavcodec/version.h \
  libavutil/version.h libavfilter/audio.h libavfilter/avfilter.h \
  libavfilter/version.h libavfilter/internal.h libavutil/internal.h \
- libavfilter/avfiltergraph.h libavfilter/formats.h \
- libavfilter/framepool.h libavfilter/framequeue.h libavfilter/thread.h \
- libavfilter/version.h libavfilter/video.h
+ libavfilter/formats.h libavfilter/framepool.h libavfilter/framequeue.h \
+ libavfilter/thread.h libavfilter/version.h libavfilter/video.h \
+ libavcodec/internal.h libavutil/mathematics.h libavcodec/avcodec.h

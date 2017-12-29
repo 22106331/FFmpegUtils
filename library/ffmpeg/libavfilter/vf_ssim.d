@@ -10,10 +10,11 @@ libavfilter/vf_ssim.o: libavfilter/vf_ssim.c libavutil/avstring.h \
  libavfilter/avfilter.h libavutil/avutil.h libavutil/buffer.h \
  libavutil/dict.h libavutil/frame.h libavutil/buffer.h libavutil/log.h \
  libavutil/samplefmt.h libavutil/pixfmt.h libavutil/rational.h \
- libavfilter/version.h libavutil/version.h libavfilter/dualinput.h \
- libavfilter/bufferqueue.h libavutil/avassert.h libavfilter/framesync.h \
- libavfilter/internal.h libavutil/internal.h libavfilter/avfiltergraph.h \
- libavfilter/formats.h libavfilter/framepool.h libavfilter/framequeue.h \
- libavfilter/thread.h libavfilter/version.h libavfilter/video.h \
- libavcodec/avcodec.h libavutil/cpu.h libavutil/channel_layout.h \
- libavcodec/version.h libavfilter/drawutils.h libavfilter/ssim.h
+ libavfilter/version.h libavutil/version.h libavfilter/drawutils.h \
+ libavfilter/formats.h libavfilter/framesync.h libavfilter/bufferqueue.h \
+ libavutil/avassert.h libavfilter/internal.h libavutil/internal.h \
+ libavfilter/framepool.h libavfilter/framequeue.h libavfilter/thread.h \
+ libavfilter/version.h libavfilter/video.h libavcodec/avcodec.h \
+ libavutil/cpu.h libavutil/channel_layout.h libavcodec/version.h \
+ libavcodec/internal.h libavutil/mathematics.h libavcodec/avcodec.h \
+ libavfilter/ssim.h

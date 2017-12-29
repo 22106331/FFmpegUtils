@@ -27,5 +27,6 @@ libavformat/mov.o: libavformat/mov.c libavutil/attributes.h \
  libavformat/internal.h libavutil/bprint.h libavutil/avstring.h \
  libavformat/os_support.h libavformat/avio_internal.h libavformat/url.h \
  libavformat/riff.h libavformat/metadata.h libavformat/isom.h \
- libavformat/dv.h libavcodec/get_bits.h libavformat/id3v1.h \
- libavformat/mov_chan.h libavformat/replaygain.h libavformat/qtpalette.h
+ libavutil/mastering_display_metadata.h libavformat/dv.h \
+ libavcodec/get_bits.h libavformat/id3v1.h libavformat/mov_chan.h \
+ libavformat/replaygain.h libavformat/qtpalette.h

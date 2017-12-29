@@ -14,4 +14,5 @@ libswscale/utils.o: libswscale/utils.c config.h libavutil/attributes.h \
  libavutil/ppc/cpu.h libavutil/x86/asm.h libavutil/x86/cpu.h \
  libswscale/rgb2rgb.h libswscale/swscale.h libavutil/log.h \
  libavutil/pixfmt.h libswscale/version.h libavutil/version.h \
- libswscale/swscale_internal.h libavutil/common.h
+ libswscale/swscale_internal.h libavutil/common.h \
+ libavutil/ppc/util_altivec.h

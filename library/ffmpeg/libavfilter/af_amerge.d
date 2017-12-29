@@ -13,7 +13,8 @@ libavfilter/af_amerge.o: libavfilter/af_amerge.c libavfilter/framequeue.h \
  libavutil/dict.h libavutil/log.h libavutil/samplefmt.h \
  libavutil/pixfmt.h libavutil/rational.h libavfilter/version.h \
  libavutil/version.h libavfilter/audio.h libavfilter/internal.h \
- libavutil/internal.h libavfilter/avfiltergraph.h libavfilter/formats.h \
- libavfilter/framepool.h libavfilter/thread.h libavfilter/version.h \
- libavfilter/video.h libavcodec/avcodec.h libavutil/cpu.h \
- libavcodec/version.h libavfilter/bufferqueue.h libavutil/avassert.h
+ libavutil/internal.h libavfilter/formats.h libavfilter/framepool.h \
+ libavfilter/thread.h libavfilter/version.h libavfilter/video.h \
+ libavcodec/avcodec.h libavutil/cpu.h libavcodec/version.h \
+ libavcodec/internal.h libavutil/mathematics.h libavcodec/avcodec.h \
+ libavfilter/bufferqueue.h libavutil/avassert.h

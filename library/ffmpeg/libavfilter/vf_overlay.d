@@ -14,9 +14,9 @@ libavfilter/vf_overlay.o: libavfilter/vf_overlay.c libavfilter/avfilter.h \
  libavutil/eval.h libavutil/avstring.h libavutil/pixdesc.h \
  libavutil/imgutils.h libavutil/pixdesc.h libavutil/mathematics.h \
  libavutil/opt.h libavutil/timestamp.h libavfilter/internal.h \
- libavutil/internal.h libavfilter/avfiltergraph.h libavfilter/framepool.h \
- libavfilter/framequeue.h libavfilter/thread.h libavfilter/version.h \
- libavfilter/video.h libavcodec/avcodec.h libavutil/cpu.h \
- libavutil/channel_layout.h libavcodec/version.h libavfilter/dualinput.h \
- libavfilter/bufferqueue.h libavutil/avassert.h libavfilter/framesync.h \
- libavfilter/drawutils.h
+ libavutil/internal.h libavfilter/framepool.h libavfilter/framequeue.h \
+ libavfilter/thread.h libavfilter/version.h libavfilter/video.h \
+ libavcodec/avcodec.h libavutil/cpu.h libavutil/channel_layout.h \
+ libavcodec/version.h libavcodec/internal.h libavcodec/avcodec.h \
+ libavfilter/drawutils.h libavfilter/framesync.h \
+ libavfilter/bufferqueue.h libavutil/avassert.h

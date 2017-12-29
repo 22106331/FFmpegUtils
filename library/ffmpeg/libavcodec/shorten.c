@@ -462,12 +462,6 @@ static int read_header(ShortenContext *s)
     }
     s->nwrap = FFMAX(NWRAP, maxnlpc);
 
-    if ((ret = allocate_buffers(s)) < 0)
-        return ret;
-
-    if ((ret = init_offset(s)) < 0)
-        return ret;
-
     if (s->version > 1)
         s->lpcqoffset = V2LPCQOFFSET;
 
@@ -504,6 +498,13 @@ static int read_header(ShortenContext *s)
     }
 
 end:
+
+    if ((ret = allocate_buffers(s)) < 0)
+        return ret;
+
+    if ((ret = init_offset(s)) < 0)
+        return ret;
+
     s->cur_chan = 0;
     s->bitshift = 0;
 
@@ -665,6 +666,10 @@ static int shorten_decode_frame(AVCodecContext *avctx, void *data,
                  * of get_sr_golomb_shorten(). */
                 if (s->version == 0)
                     residual_size--;
+                if (residual_size > 30U) {
+                    av_log(avctx, AV_LOG_ERROR, "residual size unsupportd: %d\n", residual_size);
+                    return AVERROR_INVALIDDATA;
+                }
             }
 
             /* calculate sample offset using means from previous blocks */

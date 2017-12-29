@@ -15,8 +15,9 @@ libavformat/movenc.o: libavformat/movenc.c libavformat/movenc.h \
  libavformat/movenccenc.h libavutil/aes_ctr.h libavformat/avio_internal.h \
  libavformat/url.h libavformat/riff.h libavformat/internal.h \
  libavutil/bprint.h libavutil/avstring.h libavformat/os_support.h \
- libavformat/metadata.h libavformat/isom.h libavutil/spherical.h \
- libavutil/stereo3d.h libavutil/frame.h libavformat/dv.h \
+ libavformat/metadata.h libavformat/isom.h \
+ libavutil/mastering_display_metadata.h libavutil/frame.h \
+ libavutil/spherical.h libavutil/stereo3d.h libavformat/dv.h \
  libavformat/avc.h libavcodec/ac3_parser.h libavcodec/ac3.h \
  libavutil/opt.h libavcodec/avcodec.h libavcodec/ac3tab.h \
  libavutil/internal.h libavcodec/get_bits.h libavutil/intreadwrite.h \
@@ -24,9 +25,9 @@ libavformat/movenc.o: libavformat/movenc.c libavformat/movenc.h \
  libavutil/avassert.h libavcodec/mathops.h libavutil/reverse.h \
  libavcodec/arm/mathops.h libavcodec/vlc.h libavcodec/dnxhddata.h \
  libavcodec/flac.h libavcodec/bytestream.h libavcodec/get_bits.h \
- libavcodec/put_bits.h libavcodec/vc1_common.h libavcodec/internal.h \
- libavutil/mathematics.h libavcodec/raw.h libavutil/avstring.h \
- libavutil/intfloat.h libavutil/libm.h libavutil/pixdesc.h \
- libavutil/timecode.h libavutil/color_utils.h libavformat/hevc.h \
- libavformat/rtpenc.h libavformat/rtp.h libavformat/avformat.h \
- libavformat/mov_chan.h libavformat/vpcc.h
+ libavcodec/internal.h libavutil/mathematics.h libavcodec/put_bits.h \
+ libavcodec/vc1_common.h libavcodec/internal.h libavcodec/raw.h \
+ libavutil/avstring.h libavutil/intfloat.h libavutil/libm.h \
+ libavutil/pixdesc.h libavutil/timecode.h libavutil/color_utils.h \
+ libavformat/hevc.h libavformat/rtpenc.h libavformat/rtp.h \
+ libavformat/avformat.h libavformat/mov_chan.h libavformat/vpcc.h

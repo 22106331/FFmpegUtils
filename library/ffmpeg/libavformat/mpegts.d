@@ -23,5 +23,6 @@ libavformat/mpegts.o: libavformat/mpegts.c libavutil/buffer.h \
  libavformat/version.h libavformat/mpegts.h libavformat/internal.h \
  libavutil/bprint.h libavutil/avstring.h libavformat/os_support.h \
  libavformat/avio_internal.h libavformat/url.h libavformat/mpeg.h \
- libavformat/isom.h libavutil/spherical.h libavutil/stereo3d.h \
- libavutil/frame.h libavformat/dv.h
+ libavformat/isom.h libavutil/mastering_display_metadata.h \
+ libavutil/frame.h libavutil/spherical.h libavutil/stereo3d.h \
+ libavformat/dv.h

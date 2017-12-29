@@ -13,4 +13,5 @@ libavcodec/pthread_slice.o: libavcodec/pthread_slice.c config.h \
  libavutil/rational.h libavcodec/version.h libavutil/version.h \
  libavcodec/internal.h libavutil/mathematics.h \
  libavcodec/pthread_internal.h libavcodec/thread.h libavutil/avassert.h \
- libavutil/common.h libavutil/mem.h libavutil/thread.h
+ libavutil/common.h libavutil/mem.h libavutil/thread.h \
+ libavutil/slicethread.h

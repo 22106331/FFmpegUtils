@@ -11,7 +11,8 @@ libavfilter/af_extrastereo.o: libavfilter/af_extrastereo.c \
  libavutil/buffer.h libavutil/log.h libavutil/samplefmt.h \
  libavutil/pixfmt.h libavutil/rational.h libavfilter/version.h \
  libavutil/version.h libavfilter/audio.h libavfilter/internal.h \
- libavutil/internal.h libavfilter/avfiltergraph.h libavfilter/formats.h \
- libavfilter/framepool.h libavfilter/framequeue.h libavfilter/thread.h \
- libavfilter/version.h libavfilter/video.h libavcodec/avcodec.h \
- libavutil/cpu.h libavcodec/version.h
+ libavutil/internal.h libavfilter/formats.h libavfilter/framepool.h \
+ libavfilter/framequeue.h libavfilter/thread.h libavfilter/version.h \
+ libavfilter/video.h libavcodec/avcodec.h libavutil/cpu.h \
+ libavcodec/version.h libavcodec/internal.h libavutil/mathematics.h \
+ libavcodec/avcodec.h

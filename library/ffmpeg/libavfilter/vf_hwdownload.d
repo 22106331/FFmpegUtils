@@ -13,7 +13,7 @@ libavfilter/vf_hwdownload.o: libavfilter/vf_hwdownload.c \
  libavutil/frame.h libavutil/samplefmt.h libavutil/pixfmt.h \
  libavutil/rational.h libavfilter/version.h libavutil/version.h \
  libavfilter/formats.h libavfilter/internal.h libavutil/internal.h \
- libavfilter/avfiltergraph.h libavfilter/framepool.h \
- libavfilter/framequeue.h libavfilter/thread.h libavfilter/version.h \
- libavfilter/video.h libavcodec/avcodec.h libavutil/cpu.h \
- libavutil/channel_layout.h libavcodec/version.h
+ libavfilter/framepool.h libavfilter/framequeue.h libavfilter/thread.h \
+ libavfilter/version.h libavfilter/video.h libavcodec/avcodec.h \
+ libavutil/cpu.h libavutil/channel_layout.h libavcodec/version.h \
+ libavcodec/internal.h libavutil/mathematics.h libavcodec/avcodec.h

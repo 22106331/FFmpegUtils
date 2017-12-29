@@ -8,11 +8,12 @@ libavfilter/vf_fps.o: libavfilter/vf_fps.c libavutil/common.h \
  libavutil/timer.h libavutil/arm/timer.h libavutil/cpu.h libavutil/dict.h \
  libavutil/libm.h libavutil/fifo.h libavutil/mathematics.h \
  libavutil/opt.h libavutil/samplefmt.h libavutil/parseutils.h \
+ libavfilter/framequeue.h libavutil/frame.h libavutil/buffer.h \
  libavfilter/avfilter.h libavutil/avutil.h libavutil/buffer.h \
- libavutil/dict.h libavutil/frame.h libavutil/buffer.h libavutil/log.h \
- libavutil/samplefmt.h libavutil/pixfmt.h libavutil/rational.h \
- libavfilter/version.h libavutil/version.h libavfilter/internal.h \
- libavutil/internal.h libavfilter/avfiltergraph.h libavfilter/formats.h \
- libavfilter/framepool.h libavfilter/framequeue.h libavfilter/thread.h \
+ libavutil/dict.h libavutil/log.h libavutil/samplefmt.h \
+ libavutil/pixfmt.h libavutil/rational.h libavfilter/version.h \
+ libavutil/version.h libavfilter/internal.h libavutil/internal.h \
+ libavfilter/formats.h libavfilter/framepool.h libavfilter/thread.h \
  libavfilter/version.h libavfilter/video.h libavcodec/avcodec.h \
- libavutil/cpu.h libavutil/channel_layout.h libavcodec/version.h
+ libavutil/cpu.h libavutil/channel_layout.h libavcodec/version.h \
+ libavcodec/internal.h libavcodec/avcodec.h

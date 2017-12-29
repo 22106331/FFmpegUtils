@@ -15,5 +15,5 @@ libavcodec/libx264.o: libavcodec/libx264.c libavutil/eval.h \
  libavutil/frame.h libavutil/log.h libavutil/pixfmt.h \
  libavutil/rational.h libavcodec/version.h libavutil/version.h \
  libavcodec/internal.h libavutil/mathematics.h \
- /Users/huangyanan/Downloads/ffmpeg-3.3.3/libx264/android/arm/include/x264.h \
- /Users/huangyanan/Downloads/ffmpeg-3.3.3/libx264/android/arm/include/x264_config.h
+ /Users/huangyanan/Downloads/ffmpeg/libx264/android/arm/include/x264.h \
+ /Users/huangyanan/Downloads/ffmpeg/libx264/android/arm/include/x264_config.h

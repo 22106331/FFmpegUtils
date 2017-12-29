@@ -13,9 +13,9 @@ libavfilter/vf_lut3d.o: libavfilter/vf_lut3d.c libavutil/opt.h \
  libavutil/buffer.h libavutil/dict.h libavutil/frame.h libavutil/buffer.h \
  libavutil/log.h libavutil/samplefmt.h libavutil/pixfmt.h \
  libavutil/rational.h libavfilter/version.h libavutil/version.h \
- libavfilter/drawutils.h libavfilter/dualinput.h \
- libavfilter/bufferqueue.h libavfilter/framesync.h libavfilter/internal.h \
- libavutil/internal.h libavfilter/avfiltergraph.h libavfilter/formats.h \
+ libavfilter/drawutils.h libavfilter/formats.h libavfilter/framesync.h \
+ libavfilter/bufferqueue.h libavfilter/internal.h libavutil/internal.h \
  libavfilter/framepool.h libavfilter/framequeue.h libavfilter/thread.h \
  libavfilter/version.h libavfilter/video.h libavcodec/avcodec.h \
- libavutil/cpu.h libavutil/channel_layout.h libavcodec/version.h
+ libavutil/cpu.h libavutil/channel_layout.h libavcodec/version.h \
+ libavcodec/internal.h libavutil/mathematics.h libavcodec/avcodec.h

@@ -12,7 +12,7 @@ libavfilter/trim.o: libavfilter/trim.c config.h libavutil/avassert.h \
  libavutil/buffer.h libavutil/dict.h libavutil/frame.h libavutil/buffer.h \
  libavutil/pixfmt.h libavutil/rational.h libavfilter/version.h \
  libavutil/version.h libavfilter/internal.h libavutil/internal.h \
- libavfilter/avfiltergraph.h libavfilter/formats.h \
- libavfilter/framepool.h libavfilter/framequeue.h libavfilter/thread.h \
- libavfilter/version.h libavfilter/video.h libavcodec/avcodec.h \
- libavutil/cpu.h libavcodec/version.h
+ libavfilter/formats.h libavfilter/framepool.h libavfilter/framequeue.h \
+ libavfilter/thread.h libavfilter/version.h libavfilter/video.h \
+ libavcodec/avcodec.h libavutil/cpu.h libavcodec/version.h \
+ libavcodec/internal.h libavcodec/avcodec.h

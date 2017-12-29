@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NDK=/Users/huangyanan/Library/android/sdk/ndk-bundle
+NDK=/Users/huangyanan/Documents/android-ndk-r14b
 PLATFORM=$NDK/platforms/android-16/arch-arm
 TOOLCHAIN=$NDK/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64
 
@@ -49,6 +49,7 @@ function build_one
 --enable-muxer=adts \
 --enable-muxer=h264 \
 --enable-muxer=mjpeg \
+--enable-muxer=mpegts \
 --disable-decoders \
 --enable-decoder=aac \
 --enable-decoder=aac_latm \
@@ -57,17 +58,25 @@ function build_one
 --enable-decoder=mpeg4 \
 --enable-decoder=mjpeg \
 --enable-decoder=png \
+--enable-decoder=amrnb \
+--enable-decoder=amrwb \
 --disable-demuxers \
 --enable-demuxer=image2 \
---enable-demuxer=h264 \
+--enable-demuxer=latm \
 --enable-demuxer=aac \
 --enable-demuxer=mp3 \
 --enable-demuxer=mpc \
 --enable-demuxer=mpegts \
+--enable-demuxer=mpegps \
+--enable-demuxer=mpegvideo \
+--enable-demuxer=m4v \
 --enable-demuxer=mov \
+--enable-demuxer=h264 \
 --disable-parsers \
 --enable-parser=aac \
+--enable-parser=aac_latm \
 --enable-parser=ac3 \
+--enable-parser=h263 \
 --enable-parser=h264 \
 --disable-protocols \
 --enable-protocol=file \
@@ -85,6 +94,45 @@ function build_one
 --disable-avdevice \
 --disable-symver \
 --disable-stripping \
+--disable-outdevs \
+--disable-doc \
+--disable-ffplay \
+--disable-ffmpeg \
+--disable-ffserver \
+--disable-debug \
+--disable-ffprobe \
+--disable-postproc \
+--disable-avdevice \
+--disable-symver \
+--disable-stripping \
+--disable-gray \
+--disable-swscale-alpha \
+--disable-programs \
+--disable-ffmpeg \
+--disable-ffplay \
+--disable-ffprobe \
+--disable-ffserver \
+--disable-doc \
+--disable-htmlpages \
+--disable-manpages \
+--disable-podpages \
+--disable-txtpages \
+--disable-avdevice \
+--enable-avcodec \
+--enable-avformat \
+--enable-avutil \
+--enable-swresample \
+--enable-swscale \
+--disable-postproc \
+--enable-avfilter \
+--disable-dxva2 \
+--disable-vaapi \
+--disable-vda \
+--disable-vdpau \
+--disable-hwaccels \
+--disable-devices \
+--enable-filters \
+--disable-iconv \
 --extra-cflags="-Os -fpic $ADDI_CFLAGS" \
 --extra-ldflags="$ADDI_LDFLAGS" \
 $ADDITIONAL_CONFIGURE_FLAG

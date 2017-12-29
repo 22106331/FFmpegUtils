@@ -8,12 +8,13 @@ libavfilter/vf_paletteuse.o: libavfilter/vf_paletteuse.c \
  libavutil/mathematics.h libavutil/intfloat.h libavutil/pixfmt.h \
  libavutil/arm/timer.h libavutil/cpu.h libavutil/dict.h libavutil/libm.h \
  libavutil/opt.h libavutil/samplefmt.h libavutil/qsort.h \
- libavfilter/dualinput.h libavfilter/bufferqueue.h libavfilter/avfilter.h \
- libavutil/avutil.h libavutil/buffer.h libavutil/dict.h libavutil/frame.h \
- libavutil/buffer.h libavutil/log.h libavutil/samplefmt.h \
- libavutil/pixfmt.h libavutil/rational.h libavfilter/version.h \
- libavutil/version.h libavutil/avassert.h libavfilter/framesync.h \
- libavfilter/internal.h libavfilter/avfiltergraph.h libavfilter/formats.h \
- libavfilter/framepool.h libavfilter/framequeue.h libavfilter/thread.h \
- libavfilter/version.h libavfilter/video.h libavcodec/avcodec.h \
- libavutil/cpu.h libavutil/channel_layout.h libavcodec/version.h
+ libavfilter/avfilter.h libavutil/avutil.h libavutil/buffer.h \
+ libavutil/dict.h libavutil/frame.h libavutil/buffer.h libavutil/log.h \
+ libavutil/samplefmt.h libavutil/pixfmt.h libavutil/rational.h \
+ libavfilter/version.h libavutil/version.h libavfilter/filters.h \
+ libavfilter/internal.h libavfilter/formats.h libavfilter/framepool.h \
+ libavfilter/framequeue.h libavfilter/thread.h libavfilter/version.h \
+ libavfilter/video.h libavcodec/avcodec.h libavutil/cpu.h \
+ libavutil/channel_layout.h libavcodec/version.h libavcodec/internal.h \
+ libavutil/mathematics.h libavcodec/avcodec.h libavfilter/framesync.h \
+ libavfilter/bufferqueue.h libavutil/avassert.h

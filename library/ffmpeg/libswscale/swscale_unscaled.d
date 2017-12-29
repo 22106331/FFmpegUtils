@@ -10,6 +10,6 @@ libswscale/swscale_unscaled.o: libswscale/swscale_unscaled.c config.h \
  libavutil/pixfmt.h libswscale/version.h libavutil/version.h \
  libswscale/swscale_internal.h libavutil/avassert.h libavutil/common.h \
  libavutil/intreadwrite.h libavutil/bswap.h libavutil/arm/bswap.h \
- libavutil/arm/intreadwrite.h libavutil/pixdesc.h libswscale/rgb2rgb.h \
- libavutil/cpu.h libavutil/mathematics.h libavutil/bswap.h \
- libswscale/bayer_template.c
+ libavutil/arm/intreadwrite.h libavutil/pixdesc.h \
+ libavutil/ppc/util_altivec.h libswscale/rgb2rgb.h libavutil/cpu.h \
+ libavutil/mathematics.h libavutil/bswap.h libswscale/bayer_template.c

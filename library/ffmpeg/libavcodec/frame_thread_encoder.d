@@ -13,5 +13,5 @@ libavcodec/frame_thread_encoder.o: libavcodec/frame_thread_encoder.c \
  libavutil/samplefmt.h libavutil/log.h libavutil/pixfmt.h \
  libavutil/rational.h libavcodec/version.h libavutil/version.h \
  libavutil/fifo.h libavutil/avassert.h libavutil/imgutils.h \
- libavutil/pixdesc.h libavutil/thread.h libavcodec/internal.h \
- libavutil/mathematics.h libavcodec/thread.h
+ libavutil/pixdesc.h libavutil/opt.h libavutil/thread.h \
+ libavcodec/internal.h libavutil/mathematics.h libavcodec/thread.h

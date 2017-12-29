@@ -442,7 +442,7 @@ static av_cold int dirac_decode_end(AVCodecContext *avctx)
 static inline int coeff_unpack_golomb(GetBitContext *gb, int qfactor, int qoffset)
 {
     int coeff = dirac_get_se_golomb(gb);
-    const int sign = FFSIGN(coeff);
+    const unsigned sign = FFSIGN(coeff);
     if (coeff)
         coeff = sign*((sign * coeff * qfactor + qoffset) >> 2);
     return coeff;
@@ -586,7 +586,7 @@ static inline void codeblock(DiracContext *s, SubBand *b,
     } \
 
 INTRA_DC_PRED(8, int16_t)
-INTRA_DC_PRED(10, int32_t)
+INTRA_DC_PRED(10, uint32_t)
 
 /**
  * Dirac Specification ->
@@ -1161,6 +1161,10 @@ static int dirac_unpack_prediction_parameters(DiracContext *s)
                 s->globalmc[ref].perspective[0]  = dirac_get_se_golomb(gb);
                 s->globalmc[ref].perspective[1]  = dirac_get_se_golomb(gb);
             }
+            if (s->globalmc[ref].perspective_exp + (uint64_t)s->globalmc[ref].zrs_exp > 30) {
+                return AVERROR_INVALIDDATA;
+            }
+
         }
     }
 
@@ -1179,6 +1183,11 @@ static int dirac_unpack_prediction_parameters(DiracContext *s)
 
     if (get_bits1(gb)) {
         s->weight_log2denom = get_interleaved_ue_golomb(gb);
+        if (s->weight_log2denom < 1 || s->weight_log2denom > 8) {
+            av_log(s->avctx, AV_LOG_ERROR, "weight_log2denom unsupported or invalid\n");
+            s->weight_log2denom = 1;
+            return AVERROR_INVALIDDATA;
+        }
         s->weight[0] = dirac_get_se_golomb(gb);
         if (s->num_refs == 2)
             s->weight[1] = dirac_get_se_golomb(gb);
@@ -1258,11 +1267,10 @@ static int dirac_unpack_idwt_params(DiracContext *s)
         if (get_bits1(gb)) {
             av_log(s->avctx,AV_LOG_DEBUG,"Low Delay: Has Custom Quantization Matrix!\n");
             /* custom quantization matrix */
-            s->lowdelay.quant[0][0] = get_interleaved_ue_golomb(gb);
             for (level = 0; level < s->wavelet_depth; level++) {
-                s->lowdelay.quant[level][1] = get_interleaved_ue_golomb(gb);
-                s->lowdelay.quant[level][2] = get_interleaved_ue_golomb(gb);
-                s->lowdelay.quant[level][3] = get_interleaved_ue_golomb(gb);
+                for (i = !!level; i < 4; i++) {
+                    s->lowdelay.quant[level][i] = get_interleaved_ue_golomb(gb);
+                }
             }
         } else {
             if (s->wavelet_depth > 4) {
@@ -1413,7 +1421,7 @@ static void decode_block_params(DiracContext *s, DiracArith arith[8], DiracBlock
     if (!block->ref) {
         pred_block_dc(block, stride, x, y);
         for (i = 0; i < 3; i++)
-            block->u.dc[i] += dirac_get_arith_int(arith+1+i, CTX_DC_F1, CTX_DC_DATA);
+            block->u.dc[i] += (unsigned)dirac_get_arith_int(arith+1+i, CTX_DC_F1, CTX_DC_DATA);
         return;
     }
 
@@ -2092,7 +2100,10 @@ static int dirac_decode_data_unit(AVCodecContext *avctx, const uint8_t *buf, int
             return ret;
         }
 
-        ret = ff_set_dimensions(avctx, dsh->width, dsh->height);
+        if (CALC_PADDING((int64_t)dsh->width, MAX_DWT_LEVELS) * CALC_PADDING((int64_t)dsh->height, MAX_DWT_LEVELS) > avctx->max_pixels)
+            ret = AVERROR(ERANGE);
+        if (ret >= 0)
+            ret = ff_set_dimensions(avctx, dsh->width, dsh->height);
         if (ret < 0) {
             av_freep(&dsh);
             return ret;

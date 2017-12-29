@@ -10,5 +10,6 @@ libswscale/arm/swscale.o: libswscale/arm/swscale.c config.h \
  libavutil/pixfmt.h libswscale/version.h libavutil/version.h \
  libswscale/swscale_internal.h libavutil/avassert.h libavutil/common.h \
  libavutil/intreadwrite.h libavutil/bswap.h libavutil/arm/bswap.h \
- libavutil/arm/intreadwrite.h libavutil/pixdesc.h libavutil/arm/cpu.h \
- libavutil/cpu.h libavutil/cpu_internal.h
+ libavutil/arm/intreadwrite.h libavutil/pixdesc.h \
+ libavutil/ppc/util_altivec.h libavutil/arm/cpu.h libavutil/cpu.h \
+ libavutil/cpu_internal.h

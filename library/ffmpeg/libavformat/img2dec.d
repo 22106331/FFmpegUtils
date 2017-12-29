@@ -17,4 +17,4 @@ libavformat/img2dec.o: libavformat/img2dec.c libavutil/avstring.h \
  libavformat/avio.h libavutil/common.h libavformat/version.h \
  libavformat/avio_internal.h libavformat/url.h libavformat/internal.h \
  libavutil/bprint.h libavutil/avstring.h libavformat/os_support.h \
- libavformat/img2.h libavcodec/mjpeg.h
+ libavformat/img2.h libavcodec/mjpeg.h libavformat/subtitles.h

@@ -15,5 +15,4 @@ libavformat/aacdec.o: libavformat/aacdec.c libavutil/intreadwrite.h \
  libavutil/rational.h libavcodec/version.h libavutil/version.h \
  libavformat/avio.h libavutil/common.h libavformat/version.h \
  libavformat/internal.h libavutil/bprint.h libavutil/avstring.h \
- libavformat/os_support.h libavformat/rawdec.h libavutil/opt.h \
- libavformat/id3v1.h libavformat/apetag.h
+ libavformat/os_support.h libavformat/id3v1.h libavformat/apetag.h

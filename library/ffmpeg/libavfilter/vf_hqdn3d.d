@@ -13,7 +13,8 @@ libavfilter/vf_hqdn3d.o: libavfilter/vf_hqdn3d.c config.h \
  libavutil/buffer.h libavutil/log.h libavutil/samplefmt.h \
  libavutil/pixfmt.h libavutil/rational.h libavfilter/version.h \
  libavutil/version.h libavfilter/formats.h libavfilter/internal.h \
- libavutil/internal.h libavfilter/avfiltergraph.h libavfilter/framepool.h \
- libavfilter/framequeue.h libavfilter/thread.h libavfilter/version.h \
- libavfilter/video.h libavcodec/avcodec.h libavutil/cpu.h \
- libavutil/channel_layout.h libavcodec/version.h libavfilter/vf_hqdn3d.h
+ libavutil/internal.h libavfilter/framepool.h libavfilter/framequeue.h \
+ libavfilter/thread.h libavfilter/version.h libavfilter/video.h \
+ libavcodec/avcodec.h libavutil/cpu.h libavutil/channel_layout.h \
+ libavcodec/version.h libavcodec/internal.h libavutil/mathematics.h \
+ libavcodec/avcodec.h libavfilter/vf_hqdn3d.h

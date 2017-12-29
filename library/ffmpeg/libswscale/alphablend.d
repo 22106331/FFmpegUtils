@@ -10,4 +10,4 @@ libswscale/alphablend.o: libswscale/alphablend.c \
  libavutil/mathematics.h libavutil/rational.h libavutil/avutil.h \
  libavutil/common.h libavutil/intreadwrite.h libavutil/bswap.h \
  libavutil/arm/bswap.h libavutil/arm/intreadwrite.h libavutil/log.h \
- libavutil/pixfmt.h libavutil/pixdesc.h
+ libavutil/pixfmt.h libavutil/pixdesc.h libavutil/ppc/util_altivec.h

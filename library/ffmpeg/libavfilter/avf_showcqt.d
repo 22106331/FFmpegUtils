@@ -13,10 +13,11 @@ libavfilter/avf_showcqt.o: libavfilter/avf_showcqt.c config.h \
  libavutil/buffer.h libavutil/log.h libavutil/samplefmt.h \
  libavutil/pixfmt.h libavutil/rational.h libavfilter/version.h \
  libavutil/version.h libavfilter/internal.h libavutil/internal.h \
- libavfilter/avfiltergraph.h libavfilter/formats.h \
- libavfilter/framepool.h libavfilter/framequeue.h libavfilter/thread.h \
- libavfilter/version.h libavfilter/video.h libavcodec/avcodec.h \
- libavutil/cpu.h libavutil/channel_layout.h libavcodec/version.h \
- libavfilter/lavfutils.h libavformat/avformat.h libavformat/avio.h \
- libavutil/common.h libavformat/version.h libavfilter/lswsutils.h \
- libswscale/swscale.h libswscale/version.h libavfilter/avf_showcqt.h
+ libavfilter/formats.h libavfilter/framepool.h libavfilter/framequeue.h \
+ libavfilter/thread.h libavfilter/version.h libavfilter/video.h \
+ libavcodec/avcodec.h libavutil/cpu.h libavutil/channel_layout.h \
+ libavcodec/version.h libavcodec/internal.h libavutil/mathematics.h \
+ libavcodec/avcodec.h libavfilter/lavfutils.h libavformat/avformat.h \
+ libavformat/avio.h libavutil/common.h libavformat/version.h \
+ libavfilter/lswsutils.h libswscale/swscale.h libswscale/version.h \
+ libavfilter/avf_showcqt.h

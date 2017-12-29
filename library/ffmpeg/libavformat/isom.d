@@ -13,8 +13,9 @@ libavformat/isom.o: libavformat/isom.c libavformat/avformat.h \
  libavutil/rational.h libavcodec/version.h libavutil/version.h \
  libavformat/avio.h libavutil/common.h libavformat/version.h \
  libavformat/internal.h libavutil/bprint.h libavutil/avstring.h \
- libavformat/os_support.h libavformat/isom.h libavutil/spherical.h \
- libavutil/stereo3d.h libavutil/frame.h libavformat/dv.h \
+ libavformat/os_support.h libavformat/isom.h \
+ libavutil/mastering_display_metadata.h libavutil/frame.h \
+ libavutil/spherical.h libavutil/stereo3d.h libavformat/dv.h \
  libavcodec/mpeg4audio.h libavcodec/get_bits.h libavutil/intreadwrite.h \
  libavutil/bswap.h libavutil/arm/bswap.h libavutil/arm/intreadwrite.h \
  libavutil/avassert.h libavcodec/mathops.h libavutil/reverse.h \

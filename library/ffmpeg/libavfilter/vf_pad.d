@@ -11,11 +11,11 @@ libavfilter/vf_pad.o: libavfilter/vf_pad.c libavfilter/avfilter.h \
  libavutil/samplefmt.h libavutil/log.h libavutil/samplefmt.h \
  libavutil/pixfmt.h libavutil/rational.h libavfilter/version.h \
  libavutil/version.h libavfilter/formats.h libavfilter/internal.h \
- libavutil/internal.h libavfilter/avfiltergraph.h libavfilter/framepool.h \
- libavfilter/framequeue.h libavfilter/thread.h libavfilter/version.h \
- libavfilter/video.h libavcodec/avcodec.h libavutil/cpu.h \
- libavutil/channel_layout.h libavcodec/version.h libavutil/avstring.h \
- libavutil/common.h libavutil/eval.h libavutil/pixdesc.h \
- libavutil/colorspace.h libavutil/imgutils.h libavutil/pixdesc.h \
- libavutil/parseutils.h libavutil/mathematics.h libavutil/opt.h \
- libavfilter/drawutils.h
+ libavutil/internal.h libavfilter/framepool.h libavfilter/framequeue.h \
+ libavfilter/thread.h libavfilter/version.h libavfilter/video.h \
+ libavcodec/avcodec.h libavutil/cpu.h libavutil/channel_layout.h \
+ libavcodec/version.h libavcodec/internal.h libavutil/mathematics.h \
+ libavcodec/avcodec.h libavutil/avstring.h libavutil/common.h \
+ libavutil/eval.h libavutil/pixdesc.h libavutil/colorspace.h \
+ libavutil/imgutils.h libavutil/pixdesc.h libavutil/parseutils.h \
+ libavutil/opt.h libavfilter/drawutils.h

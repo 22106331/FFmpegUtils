@@ -16,7 +16,8 @@ libavfilter/vf_signature.o: libavfilter/vf_signature.c \
  libavformat/avio.h libavutil/common.h libavformat/version.h \
  libavutil/opt.h libavutil/avstring.h libavutil/timestamp.h \
  libavfilter/avfilter.h libavfilter/version.h libavfilter/internal.h \
- libavutil/internal.h libavfilter/avfiltergraph.h libavfilter/formats.h \
- libavfilter/framepool.h libavfilter/framequeue.h libavfilter/thread.h \
- libavfilter/version.h libavfilter/video.h libavfilter/signature.h \
+ libavutil/internal.h libavfilter/formats.h libavfilter/framepool.h \
+ libavfilter/framequeue.h libavfilter/thread.h libavfilter/version.h \
+ libavfilter/video.h libavcodec/internal.h libavutil/mathematics.h \
+ libavcodec/avcodec.h libavfilter/signature.h \
  libavfilter/signature_lookup.c

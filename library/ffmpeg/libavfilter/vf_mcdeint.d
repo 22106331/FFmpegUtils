@@ -13,6 +13,6 @@ libavfilter/vf_mcdeint.o: libavfilter/vf_mcdeint.c libavutil/opt.h \
  libavutil/pixfmt.h libavutil/rational.h libavcodec/version.h \
  libavutil/version.h libavfilter/avfilter.h libavfilter/version.h \
  libavfilter/formats.h libavfilter/internal.h libavutil/internal.h \
- libavfilter/avfiltergraph.h libavfilter/framepool.h \
- libavfilter/framequeue.h libavfilter/thread.h libavfilter/version.h \
- libavfilter/video.h
+ libavfilter/framepool.h libavfilter/framequeue.h libavfilter/thread.h \
+ libavfilter/version.h libavfilter/video.h libavcodec/internal.h \
+ libavutil/mathematics.h libavcodec/avcodec.h

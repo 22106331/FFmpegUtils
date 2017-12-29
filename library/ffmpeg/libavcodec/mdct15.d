@@ -6,4 +6,5 @@ libavcodec/mdct15.o: libavcodec/mdct15.c config.h libavutil/attributes.h \
  libavutil/mathematics.h libavutil/intfloat.h libavutil/log.h \
  libavutil/pixfmt.h libavutil/internal.h libavutil/timer.h \
  libavutil/arm/timer.h libavutil/cpu.h libavutil/dict.h libavutil/libm.h \
- libavcodec/avfft.h libavcodec/mdct15.h libavcodec/fft.h libavutil/mem.h
+ libavcodec/mdct15.h libavcodec/fft.h libavutil/mem.h libavcodec/avfft.h \
+ libavcodec/fft-internal.h

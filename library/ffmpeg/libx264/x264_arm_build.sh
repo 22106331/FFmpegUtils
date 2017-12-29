@@ -2,7 +2,7 @@
 # https://github.com/mabeijianxi
 # mabeijianxi@gmail.com
 
-NDK=/Users/huangyanan/Library/android/sdk/ndk-bundle
+NDK=/Users/huangyanan/Documents/android-ndk-r14b
 
 PLATFORM=$NDK/platforms/android-16/arch-arm
 TOOLCHAIN=$NDK/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64

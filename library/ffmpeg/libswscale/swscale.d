@@ -11,4 +11,5 @@ libswscale/swscale.o: libswscale/swscale.c libavutil/avassert.h \
  libavutil/bswap.h libavutil/arm/intreadwrite.h libavutil/mathematics.h \
  libavutil/pixdesc.h libswscale/rgb2rgb.h libswscale/swscale.h \
  libavutil/log.h libavutil/pixfmt.h libswscale/version.h \
- libavutil/version.h libswscale/swscale_internal.h libavutil/common.h
+ libavutil/version.h libswscale/swscale_internal.h libavutil/common.h \
+ libavutil/ppc/util_altivec.h
