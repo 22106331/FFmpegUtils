@@ -110,7 +110,7 @@ Java_com_ffmpeg_utils_FFmpegCMD_execCmd(JNIEnv *env, jclass clazz,
         fclose(cmdline);
     }
 
-    sprintf(f_name, "/sdcard/Android/data/%s/log/ffmpeg_%ld.log",
+    sprintf(f_name, "/sdcard/Android/data/%s/cache/ffmpeg_log/ffmpeg_%ld.log",
             application_id,(tv.tv_sec * 1000. + tv.tv_usec / 1000.));
     file = fopen(f_name, "w+");
     av_log_set_callback(log_callback_report_for_cmd);
