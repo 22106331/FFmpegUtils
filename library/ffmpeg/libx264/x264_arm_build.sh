@@ -1,7 +1,4 @@
-# Created by jianxi on 2017/6/4
-# https://github.com/mabeijianxi
-# mabeijianxi@gmail.com
-
+#!/bin/sh
 NDK=/Users/huangyanan/Documents/android-ndk-r14b
 
 PLATFORM=$NDK/platforms/android-16/arch-arm
@@ -17,7 +14,6 @@ function build_one
 --enable-pic \
 --enable-strip \
 --enable-thread \
---enable-asm \
 --host=arm-linux-androideabi \
 --cross-prefix=$TOOLCHAIN/bin/arm-linux-androideabi- \
 --sysroot=$PLATFORM \
